@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>signup page</title>
+    <style>
+      form {
+        background-color: rgba(224, 224, 224, 0.7);
+        border-radius: 40px;
+        width: 50%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      body {
+        width: 100%;
+        height: 100%;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-size: 100%;
+
+        background-image: url(https://tse4.mm.bing.net/th?id=OIP.Zbv_dDhUQq7uy6pbsHTPLgAAAA&pid=Api&P=0&h=180);
+      }
+
+      .input {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+      }
+      input {
+        padding: 10px;
+        margin: 10px;
+        background-color: white;
+        border-radius: 10px;
+        border: none;
+      }
+      h1 {
+        text-align: center;
+      }
+      p {
+        text-align: center;
+      }
+
+      button {
+        /* margin-left: 8%; */
+        background-color: royalblue;
+        padding: 10px 285px;
+        border-radius: 10px;
+        border: none;
+        margin-left: 2%;
+        color: white;
+      }
+      .container {
+        width: 100%;
+        height: 100%;
+      }
+      button:hover {
+        cursor: pointer;
+      }
+      a {
+        text-decoration: none;
+        /* color:rgb(69, 65, 65); */
+      }
+      @media screen and (max-width: 600px) {
+        button {
+          /* background-color: lightgreen; */
+          padding: 10px 85px;
+          margin-left: 15px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <form action="">
+      <div class="container">
+        <h1>Create Account</h1>
+        <div class="input">
+          <input type="text" placeholder="Name" />
+          <input type="number" placeholder="Number" />
+          <input type="email" placeholder="Email" />
+          <input type="password" placeholder="password" />
+        </div>
+        <div class="button">
+          <button type="submit">Sign Up</button>
+        </div>
+        <p>already a member. <a href="singhin.html">Sign in</a></p>
+      </div>
+    </form>
+  </body>
+</html>

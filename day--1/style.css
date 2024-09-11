@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+body{
+    background-image: url(https://tse4.mm.bing.net/th?id=OIP.Zbv_dDhUQq7uy6pbsHTPLgAAAA&pid=Api&P=0&h=180);
+    background-repeat: no-repeat;
+    background-size: cover
+}
+.page1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.page1 button{
+    border: none;
+    background-color: royalblue;
+    padding: 10px 30px;
+    margin: 10px;
+    margin-left: 40%;
+    border-radius: 40px;
+    /* color: white; */
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+/* @media (max-width:414px){
+    button{
+        margin-left: 100px;
+        background: #000;
+    }
+} */

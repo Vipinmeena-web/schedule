@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>signin page</title>
+    <style>
+      form {
+        background-color: rgba(224, 224, 224, 0.7);
+        border-radius: 40px;
+        width: 40%;
+
+        /* position: absolute; */
+        /* top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%); */
+      }
+      body {
+        background-image: url(https://tse4.mm.bing.net/th?id=OIP.Zbv_dDhUQq7uy6pbsHTPLgAAAA&pid=Api&P=0&h=180);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+      }
+      .input {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+      }
+      .contain {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 7%;
+      }
+      input {
+        padding: 10px;
+        margin: 10px;
+        background-color: white;
+        border-radius: 10px;
+        border: none;
+      }
+      h1 {
+        text-align: center;
+      }
+      p {
+        text-align: center;
+      }
+      button {
+        margin-left: 2.5%;
+        background-color: royalblue;
+        padding: 10px 220px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        border: none;
+        color: white;
+      }
+      button:hover {
+        cursor: pointer;
+      }
+      a {
+        text-decoration: none;
+      }
+      @media screen and (max-width: 600px) {
+        button {
+          padding: 10px 70px;
+          margin-left: 15px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="contain">
+      <form action="">
+        <h1>Sign In</h1>
+        <div class="input">
+          <!-- <input type="text" placeholder="Name">
+        <input type="number" placeholder="Number"> -->
+          <input type="email" placeholder="useremail" />
+          <input type="password" placeholder="password" />
+        </div>
+        <button type="submit">Sign in</button>
+        <!-- <p>already a member. <a href="">Sign in</a></p> -->
+      </form>
+    </div>
+  </body>
+</html>
