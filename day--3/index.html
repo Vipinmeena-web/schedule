@@ -3,32 +3,175 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Mobile App</title>
-    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <title>MobileApp</title>
   </head>
+  <style>
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Roboto", sans-serif;
+      line-height: 1.6;
+      background-color: #dbdbdb;
+      color: #0c0000;
+    }
+
+    header {
+      position: relative;
+      height: 100vh;
+      background: url("https://tse2.mm.bing.net/th?id=OIP.J66k_pJjOegDtr9iweutOQHaEK&pid=Api&P=0&h=180");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      color: rgb(223, 208, 208);
+    }
+
+    .hero-content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      padding: 1px;
+    }
+
+    .hero-content h1 {
+      font-size: 3rem;
+      margin-bottom: 1px;
+    }
+
+    .hero-content p {
+      font-size: 1.25rem;
+      margin-bottom: 2px;
+    }
+
+    .cta-button {
+      display: inline-block;
+      padding: 1rem 2rem;
+      font-size: 1rem;
+      color: white;
+      background-color: #007bff;
+      text-decoration: none;
+      border-radius: 0.5rem;
+      transition: background-color 0.3s ease;
+    }
+
+    .cta-button:hover {
+      background-color: #0056b3;
+    }
+    #features {
+      padding: 4rem 1rem;
+      background: white;
+      text-align: center;
+    }
+
+    #features h2 {
+      margin-bottom: 2rem;
+      font-size: 2rem;
+    }
+
+    .feature {
+      display: inline-block;
+      width: 30%;
+      padding: 1rem;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      background: #fff;
+      margin: 1rem;
+      border-radius: 0.5rem;
+    }
+
+    .feature-icon {
+      width: 80px;
+      height: 80px;
+      margin-bottom: 1rem;
+    }
+
+    .feature h3 {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .feature p {
+      font-size: 1rem;
+    }
+
+    #download {
+      padding: 4rem 1rem;
+      background: #f4f4f4;
+      text-align: center;
+    }
+
+    #download h2 {
+      margin-bottom: 1rem;
+      font-size: 2rem;
+    }
+
+    #download p {
+      margin-bottom: 2rem;
+      font-size: 1.2rem;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 1rem 0;
+    }
+  </style>
   <body>
     <header>
-      <div class="container">
-        <h1>Welcome to My Mobile App</h1>
-        <p>Your ultimate solution for organizing your life effortlessly.</p>
-        <a href="#download" class="cta-button">Download Now</a>
+      <div class="hero">
+        <div class="hero-content">
+          <h1>Transform Your Daily Life with My Mobile App</h1>
+          <p>
+            Streamline your tasks, stay organized, and achieve your goals
+            effortlessly.
+          </p>
+          <a href="#download" class="cta-button">Download Now</a>
+        </div>
       </div>
     </header>
     <section id="features">
       <div class="container">
-        <h2>Features</h2>
+        <h2>Why Choose Us?</h2>
         <div class="feature">
+          <img
+            src="https://tse4.mm.bing.net/th?id=OIP.P-X6Ecvm0gu-Iy4Vq6qRsQAAAA&pid=Api&P=0&h=180"
+            alt="Ease of Use"
+            class="feature-icon"
+          />
           <h3>Easy to Use</h3>
-          <p>Intuitive interface for a smooth experience.</p>
+          <p>Navigate with ease through our user-friendly interface.</p>
         </div>
         <div class="feature">
+          <img
+            src="https://tse1.mm.bing.net/th?id=OIP.tXImraazxWSu9VKAIxyO0AHaHa&pid=Api&P=0&h=180"
+            alt="Sync Across Devices"
+            class="feature-icon"
+          />
           <h3>Sync Across Devices</h3>
-          <p>Seamless integration with all your devices.</p>
+          <p>Keep your data up-to-date across all your devices.</p>
         </div>
         <div class="feature">
+          <img
+            src="https://tse3.mm.bing.net/th?id=OIP.ZEhkqhhqx-jBs2_tC787MQAAAA&pid=Api&P=0&h=180"
+            alt="Secure"
+            class="feature-icon"
+          />
           <h3>Secure</h3>
-          <p>Your data is protected with the highest security standards.</p>
+          <p>Protect your data with our top-notch security features.</p>
         </div>
+      </div>
+    </section>
+    <section id="download">
+      <div class="container">
+        <h2>Ready to Get Started?</h2>
+        <p>Download the app today and start optimizing your life.</p>
+        <a href="#cta" class="cta-button">Get It Now</a>
       </div>
     </section>
     <footer>
