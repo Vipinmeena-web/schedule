@@ -1,0 +1,153 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+nav h1 {
+    font-size: 24px;
+}
+
+nav i {
+    font-size: 24px;
+}
+
+.photo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.personinfo {
+    text-align: center;
+}
+
+.personinfo img {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+}
+
+.photoi {
+    display: flex;
+    gap: 20px;
+}
+
+.info-item {
+    text-align: center;
+}
+
+.info-item i {
+    font-size: 36px;
+}
+
+.info-item span {
+    display: block;
+    font-size: 20px;
+    margin: 5px 0;
+}
+
+/* .page2 {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px 0;
+} */
+
+.tab-button1 {
+    padding: 10px 20px;
+    border: none;
+    background-color: #007BFF;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+.tab-buttons {
+    padding: 10px 20px;
+    border: none;
+    background-color: #007BFF;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+
+.page3 {
+    padding: 20px 0;
+    /* display: none; */
+}
+
+.page3 h1 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.contact i, .skills ul, .experience-item {
+    margin-bottom: 10px;
+}
+
+.contact span, .skills ul li {
+    display: block;
+    margin-top: 5px;
+}
+
+.skills ul {
+    list-style: none;
+    padding: 0;
+
+}
+
+.experience {
+    display: flex;
+    gap: 20px;
+    padding: 20px 0;
+}
+.experience ul li{
+    list-style: none;
+}
+.experience-item {
+    flex: 1;
+    text-align: center;
+}
+
+.experience-item i {
+    font-size: 36px;
+
+}
+
+/* .tab-button1:hover + .page3,
+.tab-button:focus + .page3 {
+    display: block;
+}
+
+ .experience{
+   
+    display: none;
+ }
+ .tab-buttons:hover + .experience,
+.tab-buttons:focus + .experience
+{
+    display: block;
+} */
