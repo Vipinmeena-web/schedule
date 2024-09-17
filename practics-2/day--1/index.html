@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      html,
+      body {
+        height: 100%;
+        width: 100%;
+      }
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        overflow: hidden;
+      }
+      .hole .img1 img {
+        /* background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center; */
+        height: 100vh;
+        width: 100%;
+      }
+      .contant1 {
+        display: flex;
+        justify-content: space-around;
+      }
+      .contant1 h2 {
+        position: absolute;
+        top: 6px;
+        left: 6px;
+        margin: 20px;
+        margin-left: 100px;
+      }
+      .contant1 h1 {
+        position: absolute;
+        top: 2px;
+        color: aliceblue;
+        font-size: 45px;
+        margin: 20px;
+        /* box-shadow: 0px 0px 5px 5px; */
+      }
+      .contant1 p {
+        position: absolute;
+        top: 50px;
+        color: aliceblue;
+        font-size: 25px;
+        margin: 20px;
+        /* box-shadow: 0px 0px 5px 5px; */
+      }
+      .contant1 img {
+        /* margin-top: 50px; */
+        position: absolute;
+        right: 0px;
+
+        /* top: 80px; */
+        /* animation: move 1s linear infinite both ;
+              */
+
+        animation-name: move;
+        animation-duration: 24s;
+        animation-timing-function: linear;
+        /* animation-delay: 0.25s; */
+        animation-iteration-count: infinite;
+
+        animation-fill-mode: both;
+      }
+      @keyframes move {
+        from {
+          top: 50px;
+          right: 0px;
+        }
+        to {
+          top: 50px;
+          right: 100%;
+          /* left:0px; */
+        }
+      }
+      .png1 {
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+      }
+      .png1 {
+        margin-bottom: -10px;
+      }
+      .png2 h2 {
+        position: absolute;
+        top: 270px;
+        left: 0px;
+        font-size: 50px;
+        color: antiquewhite;
+        animation: o;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+      }
+      @keyframes o {
+        from {
+          top: 20%;
+          right: 5%;
+        }
+        to {
+          top: 50%;
+          left: 100%;
+          /* left:0px; */
+        }
+      }
+      .png2 img {
+        height: 80px;
+        position: absolute;
+        top: 270px;
+        left: 0px;
+        animation-name: go;
+        animation-duration: 28s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+      }
+      @keyframes go {
+        from {
+          /* top: 50px; */
+          right: 10%;
+        }
+        to {
+          /* top: 50px; */
+          left: 100%;
+          /* left:0px; */
+        }
+      }
+      .info {
+        position: absolute;
+        display: flex;
+        /* justify-content: space-around; */
+        bottom: 10px;
+        right: 20px;
+        color: aliceblue;
+      }
+      .package ul {
+        margin-left: 50px;
+        /* background: #000; */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="hole">
+      <div class="img1">
+        <img src="beach photo.jpeg" alt="" />
+      </div>
+      <div class="contant1">
+        <h2>Dream holiday</h2>
+        <h1>Travel Agency</h1>
+        <p>a perfect place for your choice</p>
+        <img
+          src="https://www.pngall.com/wp-content/uploads/8/Airplane-Flight-PNG-Free-Image.png"
+          height="70px"
+          width="150px"
+          alt=""
+        />
+      </div>
+      <div class="png1">
+        <img src="download (1).png" alt="" height="300px" width="200px" />
+      </div>
+      <div class="png2">
+        <img src="ship.png" alt="" />
+        <h2>Welcome Holidays</h2>
+      </div>
+      <div class="info">
+        <div class="booknow">
+          <h1>Book Now</h1>
+          <i class="ri-phone-line"> 930383748440</i>
+          <br />
+          <i class="ri-mail-fill">bcb76r876@gmail.com</i>
+          <br />
+          <i class="ri-earth-fill">our website</i>
+          <br />
+          <i class="ri-user-location-line">Street Address,City 135</i>
+        </div>
+        <div class="package">
+          <ul>
+            <h1>Holiday Package</h1>
+            <li>5 Night</li>
+            <li>Visit to museum</li>
+            <li>The best Ressort</li>
+            <li>Snorkelling</li>
+            <li>Flight</li>
+          </ul>
+        </div>
+      </div>
+      <!-- <div class="package"><ul>
+        <h1>Holiday Package</h1>
+        <li>5 Night</li>
+        <li>Visit to museum</li>
+        <li>The best Ressort</li>
+        <li>Snorkelling</li>
+        <li>Flight</li>
+    </ul></div> -->
+    </div>
+  </body>
+</html>
