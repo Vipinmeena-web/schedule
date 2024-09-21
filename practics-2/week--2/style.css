@@ -1,0 +1,215 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+body{
+    overflow-x: hidden;
+    background: #000;
+    color: aliceblue;
+}
+button{
+    padding: 10px 20px;
+    /* color: rgb(9, 10, 10); */
+    color: aliceblue;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.navmain{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+
+}
+.navmain button{
+    background-color: #82b440;
+    border-radius: 10px;
+}
+.nav2{
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+  
+    /* margin-right: 20px; */
+}
+.button{
+    margin-left:-150px ;
+}
+.nav2 button{
+    /* display: flex; */
+    margin-left:80px ;
+    background-color: transparent;
+    border: none;
+
+    justify-content: space-between;
+}
+button:hover{
+    border: 2px solid black;
+    
+}
+/* .button button:nth-last-child(1):hover{
+    background: #000;
+} */
+
+ .page1{
+    width: 70%;
+    margin-top: 60px;
+    margin-left:100px;
+    font-size: 20px;
+    text-align: center;
+    padding: 40px 20px;
+
+ }
+
+ .page1 button{
+    background:#82b440;
+    margin-top: 50px;
+
+
+ }
+ .page2{
+    width: 100%;
+    animation: move 10s linear infinite ;
+    position: absolute;
+    position: relative;
+    /* overflow: hidden; */
+    white-space: nowrap;
+  
+ }
+ .page2 img{
+    height: 80px;
+    width: 80px;
+    margin: 60px;
+
+    
+  
+ }
+ @keyframes move {
+    from{
+        /* right: 10px; */
+        transform:translate(100%);
+    }
+    to{
+        /* right: 1000px; */
+        transform: translate(-100%);
+     
+    }
+ 
+
+ }
+
+ .page2{
+    height: 100%;
+    width: 100%;
+    /* background: #8d7a7a; */
+ }
+ .page3{
+    margin-bottom: 150px;
+ }
+ .page3 .lower{
+    width: 50%;
+    margin: 20px;
+    margin-bottom: 10px;
+ }
+ .page4{
+    background-color: #f8f4f0;
+    color: #000;
+    margin: 40px;
+    padding: 80px;
+ }
+ .page4 h1{
+    padding-top:20px ;
+    padding-bottom: 20px;
+ }
+ .page5{
+    /* padding-top:100px; */
+    padding: 200px;
+    background-color: #ffffff;    
+    color: #000;
+    width: 100%;
+    margin: 20px;
+ }
+ .page5half{
+    display: flex;
+ }
+
+ .page5 h1{
+    text-align: center;
+    font-size: 40px;
+    /* margin-top: 50px; */
+    font-family: sans-serif;
+ }
+ .page5 .talentpool{
+    background-color:  #f8f8f8;
+    width: 80%;
+    margin-top: 60px;
+}
+.talent{
+    background-color: #ffff;
+    width: 400px;
+}
+
+.talent p{
+    padding:  10px;
+}
+.martin{
+    display: flex;
+    padding: 10px;
+    margin-left: 30px;
+}
+.ellie{
+    display: flex;
+    padding: 10px;
+    margin-left: 30px;
+}
+.sofia{
+    display: flex;
+    padding: 10px;
+    margin-left: 30px;
+}
+.talentpool .profil{
+    position: absolute;
+    left: 40%;
+    margin-top: -30px;
+    background-color: #e8e2ff;
+    border: 1px solid black;
+    width: 140px;
+    display: flex;
+    /* background: #000; */
+}
+.profil{
+    text-align: center;
+}
+.hiring{
+    margin-top: 60px;
+    width: 50%;
+    padding: 20px;
+    margin-left: 140px;
+    font-size: 20px;
+}
+.hiring h1{
+    font-family: serif;
+    margin-left:-40px;
+}
+ .hiring ul {
+  color:  #777787;
+ }
+ .page5half .hiring button{
+    border: none;
+    color: #000;
+    background-color: transparent;
+    font-size: 25px;
+    border-bottom: 2px solid black;
+    margin-left: -40px;
+    margin-top: 50px;
+    border-radius: 0px;
+ }
+ .hiring button:hover{
+    border: none;
+
+ }

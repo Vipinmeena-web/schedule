@@ -1,0 +1,45 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+body{
+    background-color: #fc9410;
+}
+
+.heading{
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 60px;
+}
+.testimonial{
+    padding: 20px;
+    border-radius: 40px;
+    text-align: center;
+    width: 500px;
+    margin-left: 400px;
+    background-color: #ff4975;
+    
+    /* position: absolute; */
+}
+.main:hover{
+    /* background: #000; */
+    position: absolute;
+    /* transform: translateX(100px); */
+    transform-origin: 600px;
+    /* transform: rotate(180deg); */
+    animation: move 5s linear ;
+}
+@keyframes move {
+    from {
+        transform: rotate(0deg); /* Starting position */
+    }
+    to {
+        transform: rotate(360deg); /* Complete rotation */
+    }
+}

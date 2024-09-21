@@ -1,0 +1,91 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.main{
+    background-image: url(https://tse2.mm.bing.net/th?id=OIP.MVjJbQ2VzbHZG8EybXkTHQHaFW&pid=Api&P=0&h=180);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* position: fixed; */
+}
+nav{
+    /* background-color: rgb(92, 92, 106); */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+    margin-top: 30px;
+}
+nav .left a{
+
+    padding: 20px;
+    text-decoration: none;
+    color: rgb(19, 19, 19);
+}
+nav .center{
+    padding-top:50px;
+}
+nav .right a{
+    padding: 20px;
+    text-decoration: none;
+    color: rgb(15, 16, 16);   
+}
+.page1 .heading h1{
+    width: 570px;
+    text-align: center;
+    margin-left: 25%;
+
+}
+.page1 .section{
+    width: 1000px;
+    margin-top: 70px;
+    /* background: #000; */
+    font-family: serif;
+    /* font-weight: bold; */
+    font-size: 20px;
+    padding: 20px;
+}
+.section h2{
+    padding: 10px;
+    font-size: 40px;
+}
+.section p{
+    padding: 20px;
+    font-size:30px;
+}
+.page2 .section{
+    width: 1000px;
+    margin-top: 70px;
+    padding: 20px;
+
+}
+.section h3{
+    padding: 10px;
+}
+.section ul{
+    font-size: 25px;
+    padding: 20px;
+}
+.page3{
+    /* width: 1000px; */
+    margin-top: 70px;   
+    background: #615b5b;
+    background-color: rgba(19, 19, 19,0.9);
+    color: aliceblue;
+    border-radius: 20px;
+}
+.page3 h1{
+    padding: 20px;
+}
+.page3 p{
+    font-size: 20px;
+    padding: 20px;
+}
