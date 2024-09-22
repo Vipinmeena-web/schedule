@@ -7,6 +7,50 @@ html,body{
     height: 100%;
     width: 100%;
 }
+.imge i{
+    font-size: 30px;
+    /* border: 1px solid; */
+}
+.board{
+    /* background-color:rgb(rgb(220, 38, 38), rgb(215, 46, 46), rgb(219, 16, 30), ); */
+    background-color: #3c3939;
+    width: 180px;
+    height: 100vh;
+    /* display: none; */
+    position:fixed;
+    top: 10px;
+    left: -200px;
+    transition: 0.3s;
+    overflow-x: hidden;
+    
+    /* transition: left 0.5s ease; */
+}
+.imge{
+    position: relative;
+}
+.imge:hover .board{
+    left: 0;
+}
+.board img{
+    border-radius: 50%;
+
+}
+.board p{
+    text-align: center;
+    /* padding: 10px; */
+}
+.board .desh{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    
+}
+.desh a{
+    color: #dfd6d6;
+    text-decoration: none;
+    padding: 20px;
+}
+
 body{
     overflow-x: hidden;
     background: #000;
@@ -24,6 +68,10 @@ button{
     display: flex;
     justify-content: space-between;
     margin: 20px;
+    position: fixed;
+    width: 100%;
+    margin-top: 50px;
+
 
 }
 .navmain button{
@@ -32,8 +80,10 @@ button{
 }
 .nav2{
     margin: 20px;
+    /* margin-top: 40px; */
     display: flex;
     justify-content: space-between;
+    position: relative;
   
     /* margin-right: 20px; */
 }
@@ -45,11 +95,13 @@ button{
     margin-left:80px ;
     background-color: transparent;
     border: none;
-
+     
     justify-content: space-between;
 }
 button:hover{
-    border: 2px solid black;
+    /* border: 1px solid black; */
+
+
     
 }
 /* .button button:nth-last-child(1):hover{
@@ -113,8 +165,10 @@ button:hover{
  }
  .page3 .lower{
     width: 50%;
+    background-color: black;
     margin: 20px;
     margin-bottom: 10px;
+    color: #e8e2ff;
  }
  .page4{
     background-color: #f8f4f0;
@@ -127,12 +181,12 @@ button:hover{
     padding-bottom: 20px;
  }
  .page5{
-    /* padding-top:100px; */
-    padding: 200px;
+    padding-top:100px;
+    /* padding: 200px; */
     background-color: #ffffff;    
     color: #000;
-    width: 100%;
-    margin: 20px;
+    width: 93%;
+    margin: 40px;
  }
  .page5half{
     display: flex;
@@ -140,7 +194,7 @@ button:hover{
 
  .page5 h1{
     text-align: center;
-    font-size: 40px;
+    font-size: 30px;
     /* margin-top: 50px; */
     font-family: sans-serif;
  }
@@ -161,23 +215,55 @@ button:hover{
     display: flex;
     padding: 10px;
     margin-left: 30px;
+    
+}
+/* .profil{
+    margin-top: 20px;
+} */
+.p1,.p2,.p3{
+    display: none;
+}
+.profil .p1{
+    position: absolute;
+    /* margin-top: 200px; */
+    top: 70px;
+    /* border: 1px solid black; */
+    background-color: #e8e2ff;
+}
+
+.martin:hover .p1{
+    display: block;
 }
 .ellie{
     display: flex;
     padding: 10px;
     margin-left: 30px;
 }
+.ellie:hover .p2{
+    display: initial;
+}
 .sofia{
     display: flex;
     padding: 10px;
     margin-left: 30px;
+}
+.profil .p3{
+    position: absolute;
+    top: -70px;
+}
+.p3{
+    text-align: center;
+    background-color: #e8e2ff;
+}
+.sofia:hover .p3{
+    display: block;
 }
 .talentpool .profil{
     position: absolute;
     left: 40%;
     margin-top: -30px;
     background-color: #e8e2ff;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     width: 140px;
     display: flex;
     /* background: #000; */
@@ -185,6 +271,7 @@ button:hover{
 .profil{
     text-align: center;
 }
+
 .hiring{
     margin-top: 60px;
     width: 50%;
@@ -212,4 +299,66 @@ button:hover{
  .hiring button:hover{
     border: none;
 
+ }
+
+
+ .pricing{
+    /* border: 1px solid black; */
+    background-color: #fff;
+    width: 94%;
+    margin: 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+ .pricing .main{
+    margin: 50px;
+    box-shadow: 1px 1px 18px 5px black;
+ }
+ .upper{
+    text-align: center;
+    background-color: chocolate;
+    padding: 5px;
+ }
+ .lower{
+    text-align: center;
+    background-color: #fff;
+     margin: 10px;
+    color: #000;
+ }
+ .lower button{
+    color: #000;
+    margin: 10px;
+ }
+
+
+ .up{
+    display: flex;
+    align-items: center;
+    margin-left: 60px;
+    font-size: 40px;
+    /* padding: 20px; */
+ }
+ .lo{
+    /* padding: 20px; */
+    display: flex;
+    align-items: center;
+    margin-left: 60px;
+    font-size: 40px;
+ }
+ .fothead{
+    text-align: center;
+    /* padding: 20px; */
+    margin-top: 90px;
+ }
+
+ .fotimg{
+    display: flex;
+    justify-content: center;
+    /* padding: 20px; */
+
+
+ }
+ .fotimg img{
+    padding: 30px;
  }
