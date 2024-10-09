@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      margin: 0px;
+      padding: 0px;
+      box-sizing: border-box;
+    }
+    html,
+    body {
+      height: 100%;
+      width: 100%;
+    }
+    body {
+      background-color: black;
+      /* background-image:; */
+    }
+    .form {
+      color: white;
+      box-shadow: 4px 4px 8px 7px;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      background-color: rgba(140, 140, 66, 0.2);
+      /* border: 2px solid black; */
+      /* display: flex; */
+    }
+    p {
+      padding: 10px;
+    }
+    select {
+      background-color: rgb(17, 30, 18);
+      color: whitesmoke;
+      padding: 10px 30px;
+      margin: 0 20px;
+      border: none;
+    }
+    .desti {
+      display: flex;
+      margin-bottom: 10px;
+    }
+    .date {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+    .select {
+      display: flex;
+      margin-bottom: 10px;
+    }
+  </style>
+  <body>
+    <div class="form">
+      <img src="C:\Users\vm342\OneDrive\Desktop\practics-3\69939.jpeg" alt="" />
+      <fieldset>
+        <h1
+          style="
+            background-color: rgba(255, 204, 0, 0.87);
+            color: rgb(39, 37, 37);
+            padding: 20px;
+            margin-bottom: 30px;
+          "
+        >
+          TRAVEL JERNI FORM:
+        </h1>
+
+        <form action="">
+          <div class="desti">
+            <p>Destination:</p>
+            <select id="Destination">
+              <option value="">Select Destination</option>
+              <option value="">USA</option>
+              <option value="">Canada</option>
+              <option value="">Mexico</option>
+              <option value="">UK</option>
+              <option value="">USA</option>
+              <option value="">India</option>
+              <option value="">Australia</option>
+            </select>
+            <!-- <input type="text"> -->
+          </div>
+
+          <div class="date">
+            <p>Departure Date:</p>
+            Select Date
+            <input type="date" style="margin-left: 10px; padding: 0px 30px" />
+          </div>
+
+          <div class="date">
+            <p>Return Date:</p>
+            Select Date
+            <input type="date" style="margin-left: 31px; padding: 0px 30px" />
+          </div>
+
+          <div class="select">
+            <p>Number of Travelers:</p>
+            <select name="" id="">
+              <option value="">SELECT TRAVELERS</option>
+              <option value="">1</option>
+              <option value="">2</option>
+              <option value="">3</option>
+              <option value="">4</option>
+              <option value="">+5</option>
+            </select>
+          </div>
+
+          <div class="select">
+            <p>Travel Type</p>
+            <select name="" id="" style="margin-left: 80px; padding: 0px 60px">
+              <option value="">Select Type</option>
+              <option value="">Business</option>
+              <option value="">Leisure</option>
+              <option value="">Family</option>
+              <option value="">Honeymoon</option>
+              <option value="">Adventure</option>
+            </select>
+          </div>
+
+          <div class="select">
+            <p>Travel Class:</p>
+            <select name="" id="" style="margin-left: 70px; padding: 0px 40px">
+              <option value="">Select Class</option>
+              <option value="">Economy</option>
+              <option value="">Premium Economy</option>
+              <option value="">Business</option>
+              <option value="">Firest Class</option>
+            </select>
+          </div>
+
+          <div class="select">
+            <p>Additional Services:</p>
+            <select name="" id="" style="margin-left: 22px; padding: 0px 40px">
+              <option value="">Travel Insurance</option>
+              <option value="">Yes</option>
+              <option value="">No</option>
+            </select>
+          </div>
+          Name:<input
+            type="name "
+            placeholder="Enter your name"
+            style="
+              border: none;
+              background-color: transparent;
+              color: rgb(255, 255, 255);
+              border-bottom: 2px solid whitesmoke;
+              margin-bottom: 5px;
+              margin-left: 85px;
+            "
+          />
+          <br />
+          Email:<input
+            type="email"
+            placeholder="Enter email"
+            required
+            style="
+              border: none;
+              background-color: transparent;
+              color: rgb(255, 255, 255);
+              border-bottom: 2px solid whitesmoke;
+              margin-bottom: 5px;
+              margin-left: 85px;
+            "
+          />
+          <br />
+          Mobile NO:
+          <input
+            type="number"
+            placeholder="Enter your number"
+            style="
+              border: none;
+              background-color: transparent;
+              color: rgb(255, 255, 255);
+              border-bottom: 2px solid whitesmoke;
+              margin-bottom: 5px;
+              margin-left: 45px;
+            "
+          />
+          <br />
+          <button
+            style="
+              padding: 8px 60px;
+              border-radius: 10px;
+              background-color: royalblue;
+              color: whitesmoke;
+              font-size: 20px;
+              cursor: pointer;
+              margin-left: 30%;
+            "
+          >
+            Submit
+          </button>
+        </form>
+      </fieldset>
+    </div>
+  </body>
+</html>
