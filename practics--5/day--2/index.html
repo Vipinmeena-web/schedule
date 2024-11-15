@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Registration</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="form-container">
+      <h2>Event Registration</h2>
+      <form action="#" method="POST">
+        <!-- Step 1 -->
+        <div class="form-step" id="step1">
+          <h3>Step 1: Personal Information</h3>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="phone">Phone:</label>
+          <input type="tel" id="phone" name="phone" required />
+
+          <div class="navigation">
+            <input
+              type="radio"
+              id="next1"
+              name="step"
+              class="step-radio"
+              checked
+            />
+            <label for="next1" class="next-btn">Next</label>
+          </div>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="form-step" id="step2">
+          <h3>Step 2: Event Details</h3>
+          <label for="event">Select Event:</label>
+          <select id="event" name="event" required>
+            <option value="workshop">Workshop</option>
+            <option value="conference">Conference</option>
+            <option value="webinar">Webinar</option>
+          </select>
+
+          <label for="date">Event Date:</label>
+          <input type="date" id="date" name="date" required />
+
+          <label for="time">Event Time:</label>
+          <input type="time" id="time" name="time" required />
+
+          <div class="navigation">
+            <input type="radio" id="prev1" name="step" class="step-radio" />
+            <label for="prev1" class="prev-btn">Previous</label>
+            <input
+              type="radio"
+              id="next2"
+              name="step"
+              class="step-radio"
+              checked
+            />
+            <label for="next2" class="next-btn">Next</label>
+          </div>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="form-step" id="step3">
+          <h3>Step 3: Confirmation</h3>
+          <p>Please review your details before submitting:</p>
+          <ul>
+            <li>Name: <span id="review-name"></span></li>
+            <li>Email: <span id="review-email"></span></li>
+            <li>Phone: <span id="review-phone"></span></li>
+            <li>Event: <span id="review-event"></span></li>
+            <li>Date: <span id="review-date"></span></li>
+            <li>Time: <span id="review-time"></span></li>
+          </ul>
+          <div class="navigation">
+            <input type="radio" id="prev2" name="step" class="step-radio" />
+            <label for="prev2" class="prev-btn">Previous</label>
+            <input type="submit" value="Submit" class="submit-btn" />
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

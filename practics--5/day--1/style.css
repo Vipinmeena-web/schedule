@@ -1,0 +1,114 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h1 {
+    color: #333;
+}
+
+.countdown {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.countdown-timer {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.timer-item {
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.timer-item .time {
+    font-size: 28px;
+    font-weight: bold;
+    color: #ff5722;
+}
+
+.purchase-options {
+    margin: 20px 0;
+}
+
+.packages {
+    display: flex;
+    justify-content: space-between;
+}
+
+.package {
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    width: 30%;
+    text-align: center;
+}
+
+.package h3 {
+    color: #333;
+}
+
+button {
+    background-color: #ff5722;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #e64a19;
+}
+
+.newsletter {
+    text-align: center;
+    margin: 30px 0;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+}
+
+input[type="email"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.social-links a {
+    margin: 0 10px;
+    color: #ff5722;
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
+}

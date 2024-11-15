@@ -1,0 +1,98 @@
+<!-- 
+    
+    .password-container {
+        position: relative;
+    }
+    
+    input[type="checkbox"] {
+        position: absolute;
+        top: 20px;
+        right: 10px;
+        opacity: 0;
+        cursor: pointer;
+    }
+    
+    .toggle-password {
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        cursor: pointer;
+        font-size: 16px;
+        color: #333;
+    }
+    
+             -->
+
+   <!DOCTYPE html>
+   <html lang="en">
+   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <style>
+       .fm{
+        font-family: Arial, Helvetica, sans-serif;
+        box-shadow: 0 0 10px 5px;
+        background-color: aliceblue;
+        width: 50%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        height: 50%;
+       }
+       h1{
+        text-align: center;
+       }
+       .id{
+        /* margin-left:40px;
+        margin-top: 4px;
+        padding: 4px; */
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        
+       }
+       input{
+        margin: 5px;
+       }
+       button{
+        cursor: pointer;
+        /* margin-left: 44px;
+        margin-top: 10px;
+        margin-bottom: 10px; */
+        margin: 5px;
+        padding: 4px 68px ;
+        background-color: rgb(167, 243, 150);
+        border: none;
+       }
+    </style>
+
+   </head>
+   <body>
+    <form action="">
+        <div class="fm">
+        <h1>Login </h1>
+        <div class="id">
+        <label for="">ID:</label>
+        <br>
+        <input type="text" placeholder="enter id " required >
+        <br>
+       
+        <div class="password-container">
+            <label for="">Password:</label>
+            <br>
+            <!-- <input type="checkbox" id="showPassword" /> -->
+            <!-- <label for="showPassword" class="toggle-password">👁️</label> -->
+            <input type="password" placeholder="enter password" id="password" name="password" required />
+        </div>
+   
+       
+        <button>Login</button>
+    </div>
+    </form>
+</div>
+   </body>
+   </html>

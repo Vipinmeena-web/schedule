@@ -1,0 +1,189 @@
+/* <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Development Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h2>Web Development Quiz</h2>
+    </header>
+
+    <section class="quiz-container">
+        <h3>Question 1: What does HTML stand for?</h3>
+        <form id="quizForm">
+            <label>
+                <input type="radio" name="q1" value="a"> Hypertext Markup Language
+            </label><br>
+            <label>
+                <input type="radio" name="q1" value="b"> Hyperlink Text Marking Language
+            </label><br>
+
+            <h3>Question 2: Which of these is a programming language?</h3>
+            <label>
+                <input type="radio" name="q2" value="a"> HTML
+            </label><br>
+            <label>
+                <input type="radio" name="q2" value="b"> JavaScript
+            </label><br>
+
+            <button type="button" onclick="submitQuiz()">Submit Quiz</button>
+        </form>
+    </section>
+
+    <script src="scripts.js"></script>
+</body>
+</html> */
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav-links a:hover {
+    color: #4CAF50;
+}
+
+/* Main Banner */
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+header h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+header .cta-btn {
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #4CAF50;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 4px;
+}
+
+header .cta-btn:hover {
+    background-color: #45a049;
+}
+
+/* Courses Section */
+#courses {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#courses h2 {
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.course-container {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.course-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.course-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.course-card h3 {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.course-card p {
+    font-size: 14px;
+    margin-top: 10px;
+    color: #777;
+}
+
+.course-card .btn {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 15px;
+}
+
+.course-card .btn:hover {
+    background-color: #45a049;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+footer p {
+    font-size: 14px;
+}
+
